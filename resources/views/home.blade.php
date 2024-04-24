@@ -34,9 +34,9 @@
                           <p>Menyaring Berdasarkan Kategori</p>
                           <div class="list-group">
                           <a href="javascript:filter_image('')" class="list-group-item list-group-item-action {{(!Request::query('category'))?'active':''}}">Semua</a>
-                              <a href="javascript:filter_image('pribadi')" class="list-group-item list-group-item-action {{(Request::query('category')=='pribadi')?'active':''}}">Pribadi</a>
-                              <a href="javascript:filter_image('teman')" class="list-group-item list-group-item-action {{(Request::query('category')=='teman')?'active':''}}">Teman</a>
-                              <a href="javascript:filter_image('keluarga')" class="list-group-item list-group-item-action {{(Request::query('category')=='keluarga')?'active':''}}">Keluarga</a>
+                              <a href="javascript:filter_image('pribadi')" class="list-group-item list-group-item-action {{(Request::query('category')=='pribadi')?'active':''}}">Lambang</a>
+                              <a href="javascript:filter_image('teman')" class="list-group-item list-group-item-action {{(Request::query('category')=='teman')?'active':''}}">Latihan</a>
+                              <a href="javascript:filter_image('keluarga')" class="list-group-item list-group-item-action {{(Request::query('category')=='keluarga')?'active':''}}">Pertandingan</a>
                           </div>
                         </div>
                         <div class="col-md-9">
@@ -65,13 +65,13 @@
                                       <label for="sel1">Pilih Daftar</label>
                                       <select name="category" class="form-control" id="sel1">
                                         <option value="">Pilih Kategori</option>
-                                        <option value="Pribadi">Pribadi</option>
-                                        <option value="Teman">Teman</option>
-                                        <option value="Keluarga">Keluarga</option>
+                                        <option value="Pribadi">lambang</option>
+                                        <option value="Teman">latihan</option>
+                                        <option value="Keluarga">pertandingan</option>
                                       </select>
                                     </div>
                                     <div class="form-group">
-                                        <label class="control-label">Upload Image</label>
+                                        <label class="control-label">Upload Foto</label>
                                         <div class="preview-zone hidden">
                                           <div class="box box-solid">
                                             <div class="box-header with-border">
